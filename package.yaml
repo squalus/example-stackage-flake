@@ -1,0 +1,24 @@
+name: example
+version: 0.0.1
+synopsis: example
+description: none
+library:
+  source-dirs: Example
+  exposed-modules:
+  - Example
+executable:
+  main: Main.hs
+  ghc-options: [ -threaded ]
+  dependencies:
+  - example
+tests:
+  spec:
+    main: Main.hs
+    source-dirs: test
+    dependencies:
+    - example
+    - tasty
+    - tasty-hunit
+dependencies:
+- base
+- vector

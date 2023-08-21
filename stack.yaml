@@ -1,0 +1,13 @@
+resolver: lts-21.7
+
+packages:
+- .
+
+extra-deps:
+# add an extra dependency that's not in stackage
+#- git: https://github.com/system-f/validation
+#commit: 395c65d48b16a3045acacb88b948a66834d056af
+nix:
+  enable: false
+
+system-ghc: true

@@ -1,0 +1,49 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           example
+version:        0.0.1
+synopsis:       example
+description:    none
+build-type:     Simple
+
+library
+  exposed-modules:
+      Example
+  other-modules:
+      Paths_example
+  hs-source-dirs:
+      Example
+  build-depends:
+      base
+    , vector
+  default-language: Haskell2010
+
+executable example
+  main-is: Main.hs
+  other-modules:
+      Paths_example
+  ghc-options: -threaded
+  build-depends:
+      base
+    , example
+    , vector
+  default-language: Haskell2010
+
+test-suite spec
+  type: exitcode-stdio-1.0
+  main-is: Main.hs
+  other-modules:
+      Paths_example
+  hs-source-dirs:
+      test
+  build-depends:
+      base
+    , example
+    , tasty
+    , tasty-hunit
+    , vector
+  default-language: Haskell2010
