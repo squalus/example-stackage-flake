@@ -24,6 +24,7 @@
         packages = rec {
           example = project.example;
           default = example.components.exes.example;
+          hello = pkgs.hello;
         };
 
         devShell = project.shellFor {
