@@ -35,7 +35,7 @@
             implicit-hie = {};
             fourmolu = {};
             hlint = {};
-            stack = "2.11.1";
+            stack = "2.13.1";
           };
           additional = (p: [ p.Cabal ]);
           buildInputs = [
